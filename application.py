@@ -15,7 +15,7 @@ def saveComment():
         comment = request.form['comment']
         fieldnames = ['name', 'comment']
 
-        with open('https://hacknightdiag981.file.core.windows.net/application/storage.csv','w') as inFile:
+        with open('https://hacknightdiag981.blob.core.windows.net/apppython/storage.csv','w') as inFile:
             writer = csv.DictWriter(inFile, fieldnames=fieldnames)
 
             # writerow() will write a row in your csv file
