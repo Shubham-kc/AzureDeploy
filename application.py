@@ -15,7 +15,7 @@ def saveComment():
         comment = request.form['comment']
         fieldnames = ['name', 'comment']
 
-        with open('./storage.csv','w') as inFile:
+        with open('/home/shubham/storage.csv','w') as inFile:
             writer = csv.DictWriter(inFile, fieldnames=fieldnames)
 
             # writerow() will write a row in your csv file
