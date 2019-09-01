@@ -1,8 +1,18 @@
-<form action="" method="get" enctype="text/plain" name="Comments Form">
-<input name="name" type="text" maxlength="45" size="32" placeholder="Name" class="tab"/>
-<br />
-<textarea name="comment" class="textbox tab" rows="6" placeholder="Your comment" class="tab" cols="28"></textarea>
-<br />
-<button class="menuitem" onclick="saveComment()" class="tab">Savecomment</button>
-<br>
-</div>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="name" value="Name">
+  <br>
+  Comment:<br>
+  <input type="text" name="comment" value="Comment">
+  <br><br>
+  <input type="submit" onclick="saveComment()" value="Submit">
+</form> 
+  
+</body>
+</html>
