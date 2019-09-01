@@ -8,7 +8,7 @@ def my_form():
     return render_template('my-form-csv.html')
 
 @app.route('/save-comment', methods=['POST'])
-def save_comment():
+def saveComment():
     # This is to make sure the HTTP method is POST and not any other
     if request.method == 'POST':
         name = request.form['name']
